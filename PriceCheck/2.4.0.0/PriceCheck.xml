@@ -1,0 +1,810 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PriceCheck</name>
+    </assembly>
+    <members>
+        <member name="T:PriceCheck.PluginConfig">
+            <summary>
+            Plugin configuration class used for dalamud.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PluginConfig.Version">
+            <inheritdoc/>
+        </member>
+        <member name="T:PriceCheck.PriceCheckConfig">
+            <summary>
+            Sample plugin configuration.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.RequestTimeout">
+            <summary>
+            Gets or sets the request timeout to universalis.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.FreshInstall">
+            <summary>
+            Gets or sets a value indicating whether this is a fresh install of the plugin.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.Enabled">
+            <summary>
+            Gets or sets a value indicating whether plugin is enabled.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.PriceMode">
+            <summary>
+            Gets or sets the price mode to use for calculation.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowPrices">
+            <summary>
+            Gets or sets a value indicating whether to show prices.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.AllowKeybindAfterHover">
+            <summary>
+            Gets or sets a value indicating whether to allow keybind trigger after item hover.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.RestrictInCombat">
+            <summary>
+            Gets or sets a value indicating whether to prevent price checks in combat.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.RestrictInContent">
+            <summary>
+            Gets or sets a value indicating whether to prevent price checks in content.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.HoverDelay">
+            <summary>
+            Gets or sets a value for the hover delay before price check is triggered.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowOverlay">
+            <summary>
+            Gets or sets a value indicating whether to show overlay.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowOverlayOnLogin">
+            <summary>
+            Gets or sets a value indicating whether to show overlay on login.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowOverlayByKeybind">
+            <summary>
+            Gets or sets a value indicating whether to show overlay on login.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowKeybindInTitleBar">
+            <summary>
+            Gets or sets a value indicating whether to show keybind in title bar.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.UseOverlayColors">
+            <summary>
+            Gets or sets a value indicating whether to use overlay colors.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.MaxItemsInOverlay">
+            <summary>
+            Gets or sets the max number of items to show in overlay.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowToast">
+            <summary>
+            Gets or sets a value indicating whether to show price checks in toasts.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowInChat">
+            <summary>
+            Gets or sets a value indicating whether to show price checks in chat.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.UseChatColors">
+            <summary>
+            Gets or sets a value indicating whether to use colors in chat.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.UseItemLinks">
+            <summary>
+            Gets or sets a value indicating whether to use item links in chat.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.KeybindEnabled">
+            <summary>
+            Gets or sets a value indicating whether to require key bind to trigger price check.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ModifierKey">
+            <summary>
+            Gets or sets the modifier key for key bind.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.PrimaryKey">
+            <summary>
+            Gets or sets the primary key for key bind.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.MinPrice">
+            <summary>
+            Gets or sets the minimum price to show.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.MaxUploadDays">
+            <summary>
+            Gets or sets the maximum number of upload days.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.HideOverlayElapsed">
+            <summary>
+            Gets or sets the number of milliseconds to hide overlay after use.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowContextMenu">
+            <summary>
+            Gets or sets a value indicating whether context menu items should be enabled.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowContextAboveThis">
+            <summary>
+            Gets or sets list of items to show above.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowContextBelowThis">
+            <summary>
+            Gets or sets list of items to show below.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ChatChannel">
+            <summary>
+            Gets or sets chat channel to use for price check messages.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowSuccessInOverlay">
+            <summary>
+            Gets or sets a value indicating whether to show Success in overlay.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowFailedToProcessInOverlay">
+            <summary>
+            Gets or sets a value indicating whether to show FailedToProcess in overlay.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowFailedToGetDataInOverlay">
+            <summary>
+            Gets or sets a value indicating whether to show FailedToGetData in overlay.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowNoDataAvailableInOverlay">
+            <summary>
+            Gets or sets a value indicating whether to show NoDataAvailable in overlay.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowNoRecentDataAvailableInOverlay">
+            <summary>
+            Gets or sets a value indicating whether to show RecentDataAvailable in overlay.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowBelowVendorInOverlay">
+            <summary>
+            Gets or sets a value indicating whether to show BelowVendor in overlay.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowBelowMinimumInOverlay">
+            <summary>
+            Gets or sets a value indicating whether to show BelowMinimum in overlay.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowUnmarketableInOverlay">
+            <summary>
+            Gets or sets a value indicating whether to show Unmarketable in overlay.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowSuccessInChat">
+            <summary>
+            Gets or sets a value indicating whether to show Success in chat.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowFailedToProcessInChat">
+            <summary>
+            Gets or sets a value indicating whether to show FailedToProcess in chat.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowFailedToGetDataInChat">
+            <summary>
+            Gets or sets a value indicating whether to show FailedToGetData in chat.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowNoDataAvailableInChat">
+            <summary>
+            Gets or sets a value indicating whether to show NoDataAvailable in chat.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowNoRecentDataAvailableInChat">
+            <summary>
+            Gets or sets a value indicating whether to show RecentDataAvailable in chat.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowBelowVendorInChat">
+            <summary>
+            Gets or sets a value indicating whether to show BelowVendor in chat.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowBelowMinimumInChat">
+            <summary>
+            Gets or sets a value indicating whether to show BelowMinimum in chat.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckConfig.ShowUnmarketableInChat">
+            <summary>
+            Gets or sets a value indicating whether to show Unmarketable in chat.
+            </summary>
+        </member>
+        <member name="T:PriceCheck.InternalAction">
+            <summary>
+            Internal action code enum for use with context menus.
+            </summary>
+        </member>
+        <member name="T:PriceCheck.ItemResult">
+            <summary>
+            Result of conducting price check on item.
+            </summary>
+        </member>
+        <member name="T:PriceCheck.MarketBoardData">
+            <summary>
+            Market board data for a given item.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.MarketBoardData.LastCheckTime">
+            <summary>
+            Gets or sets last time price was checked.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.MarketBoardData.LastUploadTime">
+            <summary>
+            Gets or sets last time price was checked.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.MarketBoardData.AveragePriceNQ">
+            <summary>
+            Gets or sets the average price (NQ).
+            </summary>
+        </member>
+        <member name="P:PriceCheck.MarketBoardData.AveragePriceHQ">
+            <summary>
+            Gets or sets the average price (HQ).
+            </summary>
+        </member>
+        <member name="P:PriceCheck.MarketBoardData.CurrentAveragePriceNQ">
+            <summary>
+            Gets or sets the current average price (NQ).
+            </summary>
+        </member>
+        <member name="P:PriceCheck.MarketBoardData.CurrentAveragePriceHQ">
+            <summary>
+            Gets or sets the current average price (HQ).
+            </summary>
+        </member>
+        <member name="P:PriceCheck.MarketBoardData.MinimumPriceNQ">
+            <summary>
+            Gets or sets the minimum price (NQ).
+            </summary>
+        </member>
+        <member name="P:PriceCheck.MarketBoardData.MinimumPriceHQ">
+            <summary>
+            Gets or sets the minimum price (HQ).
+            </summary>
+        </member>
+        <member name="P:PriceCheck.MarketBoardData.MaximumPriceNQ">
+            <summary>
+            Gets or sets the maximum price (NQ).
+            </summary>
+        </member>
+        <member name="P:PriceCheck.MarketBoardData.MaximumPriceHQ">
+            <summary>
+            Gets or sets the maximum price (HQ).
+            </summary>
+        </member>
+        <member name="P:PriceCheck.MarketBoardData.CurrentMinimumPrice">
+            <summary>
+            Gets or sets the current minimum price.
+            </summary>
+        </member>
+        <member name="T:PriceCheck.PricedItem">
+            <summary>
+            Item with pricing data.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PricedItem.ItemId">
+            <summary>
+            Gets or sets parsed item id.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PricedItem.LastUpdated">
+            <summary>
+            Gets or sets a value indicating price check time.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PricedItem.IsHQ">
+            <summary>
+            Gets or sets a value indicating whether item is HQ.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PricedItem.IsMarketable">
+            <summary>
+            Gets or sets a value indicating whether item is marketable.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PricedItem.ItemName">
+            <summary>
+            Gets or sets the item name.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PricedItem.VendorPrice">
+            <summary>
+            Gets or sets the vendor price.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PricedItem.Result">
+            <summary>
+            Gets or sets the price check result.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PricedItem.MarketPrice">
+            <summary>
+            Gets or sets a value for market price.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PricedItem.Message">
+            <summary>
+            Gets or sets the message to show in chat.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PricedItem.ChatColor">
+            <summary>
+            Gets or sets the color for chat messages.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PricedItem.OverlayColor">
+            <summary>
+            Gets or sets the color for overlay messages.
+            </summary>
+        </member>
+        <member name="T:PriceCheck.PriceMode">
+            <summary>
+            PriceMode enum.
+            </summary>
+        </member>
+        <member name="F:PriceCheck.PriceMode.PriceModes">
+            <summary>
+            List of price modes.
+            </summary>
+        </member>
+        <member name="F:PriceCheck.PriceMode.PriceModeNames">
+            <summary>
+            List of price mode names.
+            </summary>
+        </member>
+        <member name="F:PriceCheck.PriceMode.AveragePrice">
+            <summary>
+            Price mode: historical average.
+            </summary>
+        </member>
+        <member name="F:PriceCheck.PriceMode.CurrentAveragePrice">
+            <summary>
+            Price mode: current average.
+            </summary>
+        </member>
+        <member name="F:PriceCheck.PriceMode.MinimumPrice">
+            <summary>
+            Price mode: minimum price.
+            </summary>
+        </member>
+        <member name="F:PriceCheck.PriceMode.MaximumPrice">
+            <summary>
+            Price mode: maximum price.
+            </summary>
+        </member>
+        <member name="F:PriceCheck.PriceMode.CurrentMinimumPrice">
+            <summary>
+            Price mode: current minimum price.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.PriceMode.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:PriceCheck.PriceMode"/> class.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceMode.Index">
+            <summary>
+            Gets or sets price mode index.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceMode.Name">
+            <summary>
+            Gets or sets price mode name.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceMode.Description">
+            <summary>
+            Gets or sets price mode description.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.PriceMode.GetPriceModeByIndex(System.Int32)">
+            <summary>
+            Find price mode by index.
+            </summary>
+            <param name="index">price mode index.</param>
+            <returns>price mode.</returns>
+        </member>
+        <member name="M:PriceCheck.PriceMode.ToString">
+            <summary>
+            Gets item name.
+            </summary>
+            <returns>price mode name.</returns>
+        </member>
+        <member name="T:PriceCheck.ContextMenuManager">
+            <summary>
+            Manage custom context menu on items.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.ContextMenuManager.#ctor(PriceCheck.PriceCheckPlugin)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PriceCheck.ContextMenuManager"/> class.
+            </summary>
+            <param name="plugin">plugin.</param>
+        </member>
+        <member name="M:PriceCheck.ContextMenuManager.Dispose">
+            <summary>`
+            Dispose context menu manager.
+            </summary>
+        </member>
+        <member name="T:PriceCheck.HoveredItemManager">
+            <summary>
+            Manage item hover events.
+            </summary>
+        </member>
+        <member name="F:PriceCheck.HoveredItemManager.ItemId">
+            <summary>
+            Previous id from item hover to allow for holding keybind after hover.
+            </summary>
+        </member>
+        <member name="F:PriceCheck.HoveredItemManager.ItemQuality">
+            <summary>
+            Previous item quality from item hover to allow for holding keybind after hover.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.HoveredItemManager.#ctor(PriceCheck.PriceCheckPlugin)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PriceCheck.HoveredItemManager"/> class.
+            </summary>
+            <param name="plugin">plugin.</param>
+        </member>
+        <member name="M:PriceCheck.HoveredItemManager.Dispose">
+            <summary>
+            Dispose hover item events.
+            </summary>
+        </member>
+        <member name="T:PriceCheck.PluginCommandManager">
+            <summary>
+            Manage plugin commands.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.PluginCommandManager.#ctor(PriceCheck.PriceCheckPlugin)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PriceCheck.PluginCommandManager"/> class.
+            </summary>
+            <param name="plugin">plugin.</param>
+        </member>
+        <member name="M:PriceCheck.PluginCommandManager.Dispose">
+            <summary>
+            Dispose command manager.
+            </summary>
+        </member>
+        <member name="T:PriceCheck.PriceCheckPlugin">
+            <summary>
+            PriceCheck plugin.
+            </summary>
+        </member>
+        <member name="F:PriceCheck.PriceCheckPlugin.ItemCancellationTokenSource">
+            <summary>
+            Cancellation token to terminate request if interrupted.
+            </summary>
+        </member>
+        <member name="F:PriceCheck.PriceCheckPlugin.ContextMenu">
+            <summary>
+            Context Menu Lib.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.PriceCheckPlugin.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:PriceCheck.PriceCheckPlugin"/> class.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckPlugin.PluginInterface">
+            <summary>
+            Gets pluginInterface.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckPlugin.ClientState">
+            <summary>
+            Gets client state.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckPlugin.Chat">
+            <summary>
+            Gets chat gui.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckPlugin.CommandManager">
+            <summary>
+            Gets command manager.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckPlugin.Toast">
+            <summary>
+            Gets toast gui.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckPlugin.KeyState">
+            <summary>
+            Gets toast gui.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckPlugin.DataManager">
+            <summary>
+            Gets data manager.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckPlugin.Condition">
+            <summary>
+            Gets condition.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckPlugin.GameGui">
+            <summary>
+            Gets game gui.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckPlugin.Name">
+            <inheritdoc />
+        </member>
+        <member name="P:PriceCheck.PriceCheckPlugin.PluginCommandManager">
+            <summary>
+            Gets or sets command manager to handle user commands.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckPlugin.PriceService">
+            <summary>
+            Gets price service.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckPlugin.UniversalisClient">
+            <summary>
+            Gets universalis client.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckPlugin.Configuration">
+            <summary>
+            Gets or sets plugin configuration.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckPlugin.WindowManager">
+            <summary>
+            Gets or sets window manager.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckPlugin.ContextMenuManager">
+            <summary>
+            Gets or sets context Menu manager to handle item context menu.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.PriceCheckPlugin.HoveredItemManager">
+            <summary>
+            Gets or sets hovered item manager to handle hover item events.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.PriceCheckPlugin.PrintHelpMessage">
+            <summary>
+            Gets plugin configuration.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.PriceCheckPlugin.SendToast(PriceCheck.PricedItem)">
+            <summary>
+            Send toast.
+            </summary>
+            <param name="pricedItem">priced Item.</param>
+        </member>
+        <member name="M:PriceCheck.PriceCheckPlugin.PrintItemMessage(PriceCheck.PricedItem)">
+            <summary>
+            Print item message.
+            </summary>
+            <param name="pricedItem">priced item.</param>
+        </member>
+        <member name="M:PriceCheck.PriceCheckPlugin.IsKeyBindPressed">
+            <summary>
+            Check if keybind is pressed.
+            </summary>
+            <returns>indicator if keybind is pressed.</returns>
+        </member>
+        <member name="M:PriceCheck.PriceCheckPlugin.Dispose">
+            <summary>
+            Dispose plugin.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.PriceCheckPlugin.SaveConfig">
+            <summary>
+            Save plugin configuration.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.PriceCheckPlugin.ShouldPriceCheck">
+            <summary>
+            Check state and configuration to determine if price check should be made.
+            </summary>
+            <returns>indicator whether or not price check should be made.</returns>
+        </member>
+        <member name="T:PriceCheck.PriceService">
+            <summary>
+            Pricing service.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.PriceService.#ctor(PriceCheck.PriceCheckPlugin)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PriceCheck.PriceService"/> class.
+            </summary>
+            <param name="plugin">price check plugin.</param>
+        </member>
+        <member name="P:PriceCheck.PriceService.LastPriceCheck">
+            <summary>
+            Gets or sets last price check conducted in unix timestamp.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.PriceService.GetItems">
+            <summary>
+            Get priced items.
+            </summary>
+            <returns>list of priced items.</returns>
+        </member>
+        <member name="M:PriceCheck.PriceService.ClearItems">
+            <summary>
+            Clear all items.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.PriceService.ProcessItemAsync(System.UInt32,System.Boolean)">
+            <summary>
+            Conduct price check.
+            </summary>
+            <param name="itemId">item id to lookup.</param>
+            <param name="isHQ">indicator if item is hq.</param>
+        </member>
+        <member name="T:PriceCheck.UniversalisClient">
+            <summary>
+            Universalis client.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.UniversalisClient.#ctor(PriceCheck.PriceCheckPlugin)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PriceCheck.UniversalisClient"/> class.
+            </summary>
+            <param name="plugin">price check plugin.</param>
+        </member>
+        <member name="M:PriceCheck.UniversalisClient.GetMarketBoard(System.UInt32,System.UInt64)">
+            <summary>
+            Get market board data.
+            </summary>
+            <param name="worldId">world id.</param>
+            <param name="itemId">item id.</param>
+            <returns>market board data.</returns>
+        </member>
+        <member name="M:PriceCheck.UniversalisClient.Dispose">
+            <summary>
+            Dispose client.
+            </summary>
+        </member>
+        <member name="T:PriceCheck.ConfigWindow">
+            <summary>
+            Config window for the plugin.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.ConfigWindow.#ctor(PriceCheck.PriceCheckPlugin)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PriceCheck.ConfigWindow"/> class.
+            </summary>
+            <param name="plugin">PriceCheck plugin.</param>
+        </member>
+        <member name="M:PriceCheck.ConfigWindow.Draw">
+            <inheritdoc/>
+        </member>
+        <member name="T:PriceCheck.MainWindow">
+            <summary>
+            Config window for the plugin.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.MainWindow.#ctor(PriceCheck.PriceCheckPlugin)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PriceCheck.MainWindow"/> class.
+            </summary>
+            <param name="plugin">PriceCheck plugin.</param>
+        </member>
+        <member name="M:PriceCheck.MainWindow.OnClose">
+            <inheritdoc />
+        </member>
+        <member name="M:PriceCheck.MainWindow.OpenOnLogin">
+            <summary>
+            Open window on login depending on config.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.MainWindow.UpdateWindowTitle">
+            <summary>
+            Update window title.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.MainWindow.Draw">
+            <inheritdoc />
+        </member>
+        <member name="T:PriceCheck.PluginWindow">
+            <summary>
+            Plugin window which extends window with PlayerTrack.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.PluginWindow.#ctor(PriceCheck.PriceCheckPlugin,System.String,ImGuiNET.ImGuiWindowFlags)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PriceCheck.PluginWindow"/> class.
+            </summary>
+            <param name="plugin">PriceCheck plugin.</param>
+            <param name="windowName">Name of the window.</param>
+            <param name="flags">ImGui flags.</param>
+        </member>
+        <member name="P:PriceCheck.PluginWindow.Plugin">
+            <summary>
+            Gets PlayerTrack for window.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.PluginWindow.Draw">
+            <inheritdoc/>
+        </member>
+        <member name="T:PriceCheck.WindowManager">
+            <summary>
+            Window manager to hold plugin windows and window system.
+            </summary>
+        </member>
+        <member name="F:PriceCheck.WindowManager.IsOpenByKeybind">
+            <summary>
+            Is main window open due to keybind being held.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.WindowManager.#ctor(PriceCheck.PriceCheckPlugin)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PriceCheck.WindowManager"/> class.
+            </summary>
+            <param name="priceCheckPlugin">PriceCheck plugin.</param>
+        </member>
+        <member name="P:PriceCheck.WindowManager.MainWindow">
+            <summary>
+            Gets main PriceCheck window.
+            </summary>
+        </member>
+        <member name="P:PriceCheck.WindowManager.ConfigWindow">
+            <summary>
+            Gets config PriceCheck window.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.WindowManager.SpacerWithTabs">
+            <summary>
+            Create a dummy scaled for use with tabs.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.WindowManager.SpacerNoTabs">
+            <summary>
+            Create a dummy scaled for use without tabs.
+            </summary>
+        </member>
+        <member name="M:PriceCheck.WindowManager.Dispose">
+            <summary>
+            Dispose plugin windows and commands.
+            </summary>
+        </member>
+    </members>
+</doc>
