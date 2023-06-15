@@ -1,0 +1,43 @@
+{
+  "Disabled": false,
+  "Testing": false,
+  "ScheduledForDeletion": false,
+  "InstalledFromUrl": "OFFICIAL",
+  "IsThirdParty": false,
+  "EffectiveVersion": "2.2.0.1",
+  "IsAvailableForTesting": false,
+  "Author": "electr0sheep",
+  "Name": "Item Vendor Location",
+  "Punchline": "显示您在哪里购买供应商物品",
+  "Description": "为物品添加上下文菜单选项，显示在哪里可以找到可以从供应商处购买的物品",
+  "Changelog": "- Fixed issue with Garland Tools map links\n- Added setting for showing shop info\n\nIf the plugin isn't working for a particular item, please let me know the name of the item. Creating an issue in GitHub works best, but leaving feedback will work as well.",
+  "Tags": [
+    "vendor plugin item"
+  ],
+  "CategoryTags": [],
+  "IsHide": false,
+  "InternalName": "ItemVendorLocation",
+  "AssemblyVersion": "2.2.0.1",
+  "TestingAssemblyVersion": null,
+  "IsTestingExclusive": false,
+  "RepoUrl": "https://github.com/electr0sheep/ItemVendorLocation",
+  "ApplicableVersion": "any",
+  "DalamudApiLevel": 8,
+  "DownloadCount": 9075,
+  "LastUpdate": 1683574975,
+  "DownloadLinkInstall": "https://aonyx.ffxiv.wang/Plugin/Download/ItemVendorLocation?isUpdate=False&isTesting=False&branch=api8",
+  "DownloadLinkUpdate": "https://aonyx.ffxiv.wang/Plugin/Download/ItemVendorLocation?isUpdate=True&isTesting=False&branch=api8",
+  "DownloadLinkTesting": "https://aonyx.ffxiv.wang/Plugin/Download/ItemVendorLocation?isUpdate=False&isTesting=True&branch=api8",
+  "LoadRequiredState": 0,
+  "LoadSync": false,
+  "LoadPriority": 0,
+  "CanUnloadAsync": false,
+  "ImageUrls": [
+    "https://raw.githubusercontent.com/electr0sheep/ItemVendorLocation/main/Images/ContextMenu.png"
+  ],
+  "IconUrl": "https://raw.githubusercontent.com/electr0sheep/ItemVendorLocation/main/Images/icon.png",
+  "AcceptsFeedback": true,
+  "FeedbackMessage": null,
+  "_isDip17Plugin": true,
+  "_Dip17Channel": "stable"
+}
